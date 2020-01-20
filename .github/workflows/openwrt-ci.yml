@@ -7,16 +7,14 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-2
+name: X64-Lean-OpenWrt-CI
 
 on:
+  schedule:
+    - cron: 0 22 * * *
   push:
     branches: 
       - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  # release:
-  #   types: [published]
 
 jobs:
 
